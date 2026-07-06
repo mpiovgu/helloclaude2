@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-git --import-alias \"@/*\" --use-npm)",
+      "Bash(npm install *)",
+      "Bash(npx prisma *)",
+      "Bash(mkdir -p src/app/api/auth/\\\\[...nextauth\\\\])",
+      "Bash(mkdir -p \"src/app/\\(auth\\)/login\" \"src/app/\\(auth\\)/register\" \"src/app/\\(public\\)/articles/[slug]\" \"src/app/\\(public\\)/categories/[slug]\" \"src/app/admin/articles/new\" \"src/app/admin/articles/[id]/edit\" \"src/app/admin/categories\" \"src/app/admin/comments\" \"src/app/api/upload\")",
+      "Bash(npm run *)",
+      "Bash(node -e \"const m = require\\('@prisma/adapter-better-sqlite3'\\); console.log\\(Object.keys\\(m\\)\\)\")",
+      "Bash(node -e \"const m = require\\('@prisma/adapter-better-sqlite3'\\); const f = m.PrismaBetterSqlite3.toString\\(\\).slice\\(0,200\\); console.log\\(f\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(npx next *)",
+      "Bash(mkdir -p .claude)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
