@@ -1,12 +1,9 @@
 import "dotenv/config";
 import { PrismaClient } from "../src/generated/prisma/client";
-import { PrismaLibSql } from "@prisma/adapter-libsql";
+import { PrismaPg } from "@prisma/adapter-pg";
 import bcrypt from "bcryptjs";
 
-const adapter = new PrismaLibSql({
-  url: process.env.TURSO_DATABASE_URL!,
-  authToken: process.env.TURSO_AUTH_TOKEN,
-});
+const adapter = new PrismaPg({ connectionString: process.env.POSTGRES_URL! });
 const prisma = new PrismaClient({ adapter });
 
 async function main() {
@@ -55,10 +52,10 @@ async function main() {
 
 这个博客使用以下技术构建：
 
-- **Next.js 15** - React 全栈框架
+- **Next.js 16** - React 全栈框架
 - **Tailwind CSS** - 实用优先的 CSS 框架
 - **Prisma** - 现代数据库 ORM
-- **SQLite** - 轻量级数据库
+- **PostgreSQL** - 强大的关系型数据库
 
 ## 代码示例
 
