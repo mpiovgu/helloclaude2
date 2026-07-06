@@ -14,7 +14,21 @@
       "Bash(mkdir -p .claude)",
       "Bash(gh auth *)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(gh api *)",
+      "Bash(git config *)",
+      "Bash(gh repo *)",
+      "Bash(npx vercel *)",
+      "Bash(npm uninstall *)",
+      "Bash(where turso *)",
+      "Bash(curl -sSfL https://get.tur.so/install.sh)",
+      "Bash(bash)",
+      "Bash(npx tsx *)",
+      "Bash(node -e \"const m = require\\('@prisma/adapter-libsql'\\); console.log\\(Object.keys\\(m\\)\\)\")",
+      "Bash(node -e \"const pkg = require\\('@prisma/adapter-libsql/package.json'\\); console.log\\(pkg.version\\)\")",
+      "Bash(node -e \"const m = require\\('@prisma/adapter-libsql'\\); const src = m.PrismaLibSql.toString\\(\\); console.log\\(src.slice\\(0,500\\)\\)\")",
+      "Bash(node -e \"const m = require\\('@prisma/adapter-libsql'\\); const base = Object.getPrototypeOf\\(m.PrismaLibSql.prototype\\).constructor.toString\\(\\).slice\\(0,800\\); console.log\\(base\\)\")"
     ]
   }
 }
