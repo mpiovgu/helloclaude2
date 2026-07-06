@@ -1,4 +1,6 @@
 import { prisma } from "@/lib/prisma";
+
+export const dynamic = "force-dynamic";
 import { revalidatePath } from "next/cache";
 import { slugify } from "@/lib/utils";
 import { auth } from "@/lib/auth";

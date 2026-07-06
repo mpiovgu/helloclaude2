@@ -29,7 +29,9 @@
       "Bash(node -e \"const pkg = require\\('@prisma/adapter-libsql/package.json'\\); console.log\\(pkg.version\\)\")",
       "Bash(node -e \"const m = require\\('@prisma/adapter-libsql'\\); const src = m.PrismaLibSql.toString\\(\\); console.log\\(src.slice\\(0,500\\)\\)\")",
       "Bash(node -e \"const m = require\\('@prisma/adapter-libsql'\\); const base = Object.getPrototypeOf\\(m.PrismaLibSql.prototype\\).constructor.toString\\(\\).slice\\(0,800\\); console.log\\(base\\)\")",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(npx tsx -e ' *)",
+      "WebFetch(domain:helloclaude2.vercel.app)"
     ]
   }
 }

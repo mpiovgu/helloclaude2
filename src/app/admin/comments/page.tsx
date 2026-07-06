@@ -3,6 +3,8 @@ import { revalidatePath } from "next/cache";
 import { auth } from "@/lib/auth";
 import { formatDate } from "@/lib/utils";
 
+export const dynamic = "force-dynamic";
+
 async function deleteComment(formData: FormData) {
   "use server";
   const session = await auth();
